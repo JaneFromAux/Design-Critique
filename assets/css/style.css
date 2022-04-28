@@ -66,18 +66,24 @@ header nav h4 {
     font-size: 2.5rem;
 }
 
-header nav button {
-    padding: 8px 50px;
+header nav>a {
+    padding: 6px 50px;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: px;
     background-color: white;
-}
-
-header nav button a {
     text-decoration: none;
     color: black;
     font-family: Graphik_Medium;
     font-size: 1.8rem;
+}
+
+header nav>a:hover {
+    background-color: black;
+    color: white;
+}
+
+header nav button a:hover {
+    color: white;
 }
 
 /* 
@@ -228,37 +234,105 @@ MAIN H3 und MAIN P
 */
 main>h3 {
     text-align: center;
+    font-size: 5rem;
+    padding-bottom: 4vh;
 }
 
 main>p {
     text-align: center;
-    padding: 0 auto;
+    margin: 0 auto;
     width: 49%;
     line-height: 2;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+    padding-bottom: 0;
+
 }
 
 /* 
 MAIN SECTION:LAST CHILD
 */
-main>section:last-child {
+.letzterContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('../img/28.png') center/cover no-repeat;
-    margin-top: 50vh;
+    /* background: url('../img/28.png') center/cover no-repeat; */
+    /* margin-top: 50vh; */
 }
 
-main>section:last-child article {
-    padding: 10vh auto;
-    text-align: center;
+.letzterContainer div {
+    margin-top: 15vh;
+    background: url('../img/28.png') top/120% no-repeat;
+    width: 100%;
 }
 
-main>section:last-child div>section {
-    background: url('../img/28.png') center/cover no-repeat;
+.letzterContainer article {
+    /* padding: 10vh auto; */
+
 }
 
-main>section:last-child div article {
+.letzterContainer div article {
+    padding-top: 25vh;
+    /* padding-bottom: 5vh; */
     display: flex;
-    flex-direction: row;
+
+}
+
+.letzterContainer div article>p {
+    color: #9FA2A7;
+    padding-left: 17%;
+    padding-top: 8%;
+    font-family: Graphik_Medium;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3.8rem;
+    width: 55%;
+}
+
+.letzterContainer>div>article>section {
+    background: url('../img/home_conversion.png') center/100% no-repeat;
+    width: 55%;
+}
+
+/* 
+FOOTER
+*/
+footer {
+    border-top: 1px solid #848689;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+footer h3 {
+    margin-left: 13%;
+    margin-right: 13%;
+    font-family: TiemposHeadline;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    text-align: center;
+    font-size: 5.3rem;
+    font-weight: bold;
+}
+
+footer p {
+    color: #9FA2A7;
+    text-align: center;
+    padding-bottom: 5vh;
+    font-size: 1.8rem;
+    font-family: Graphik_Medium;
+}
+
+footer p img {
+    width: 100px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    font-family: Graphik_Medium;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: black;
 }
