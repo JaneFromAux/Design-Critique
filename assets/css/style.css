@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Graphik_Medium;
+    src: url(../fonts/Graphik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Graphik_Regular;
+    src: url(../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: Theinhardt_Light;
+    src: url(../fonts/Theinhardt-Lt.woff);
+}
+
+@font-face {
+    font-family: TiemposHeadline;
+    src: url(../fonts/TiemposHeadline-Semibold.woff);
+}
+
+/* #2B2C2E /  #9FA2A7 / #27282A /  #848689 / #3D3E41 / #fff */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    /* overflow: hidden;*/
+}
+
+/* 
+HEADER 
+nav        */
+
+header nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+header nav ul {
+    width: 18%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a {
+    font-family: Graphik_Regular;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+header nav h4 {
+    font-family: TiemposHeadline;
+    font-size: 2.5rem;
+}
+
+header nav button {
+    padding: 8px 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+header nav button a {
+    text-decoration: none;
+    color: black;
+    font-family: Graphik_Medium;
+    font-size: 1.8rem;
+}
+
+/* 
+Herosection 
+*/
+header section {
+    padding-top: 10vh;
+    background: url('../img/home_hero.png') center/cover no-repeat;
+    padding-bottom: 71vh;
+}
+
+header h1 {
+    margin-bottom: 5vh;
+    text-align: center;
+    font-family: Graphik_Regular;
+    font-size: 3.8rem;
+}
+
+/* 
+MAIN
+*/
+
+main {
+    padding: 20vh 8vw 0 8vw;
+}
+
+main>article {
+    font-family: Graphik_Medium;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28vh;
+}
+
+main>article>p {
+    flex-basis: 55vw;
+    font-size: 2.1rem;
+    line-height: 1.5;
+}
+
+main>article>div {
+    font-family: Theinhardt_Light;
+    flex-basis: 25vw;
+    text-align: left;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main>article>div h2 {
+    font-size: 6.5rem;
+}
+
+main>article>div p {
+    color: #9FA2A7;
+    font-size: 1.9rem;
+    width: 60%;
+}
+
+/* 
+MAIN>DIV 
+*/
+main div {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20vh;
+}
+
+main>div img {
+    width: 48%;
+}
+
+main>div article {
+    padding-left: 2vw;
+}
+
+main>div article h3,
+main>section div h3,
+main>h3 {
+    font-family: TiemposHeadline;
+    font-size: 6rem;
+    padding-bottom: 8vh;
+}
+
+main>div article h4 {
+    font-family: Graphik_Medium;
+    font-size: 2.4rem;
+    padding-bottom: 2.3vh;
+}
+
+main>div article p,
+main>section div p,
+main>section div ol li,
+main>p {
+    font-family: Theinhardt_Light;
+    font-size: 2.1rem;
+    color: #848689;
+    line-height: 1.3;
+    padding-bottom: 3vh;
+}
+
+/* 
+MAIN>SECTION
+*/
+main>section:nth-of-type(1) {
+    background-color: rgba(159, 162, 167, 0.2);
+    display: flex;
+    margin-bottom: 10vh;
+    justify-content: space-between;
+}
+
+main>section:nth-of-type(1)>div {
+    display: block;
+    padding-left: 4vw;
+    padding-top: 5vh;
+    width: 45%;
+}
+
+main>section:nth-of-type(1)>div ol {
+    padding-left: 3vw;
+    padding-bottom: 2vh;
+}
+
+main>section:nth-of-type(1)>div ol li {
+    font-family: Theinhardt_Light;
+    font-size: 2.1rem;
+    line-height: 1.3;
+}
+
+main>section:nth-of-type(1)>div h3 {
+    padding-bottom: 3vh;
+    font-size: 5.5rem;
+}
+
+main>section:nth-of-type(1)>div ol li,
+main>section:nth-of-type(1)>div p {
+    color: #3D3E41;
+    padding-bottom: 0;
+    font-size: 1.8rem;
+}
+
+main>section:nth-of-type(1)>img {
+    width: 50%;
+}
+
+/* 
+MAIN H3 und MAIN P
+*/
+main>h3 {
+    text-align: center;
+}
+
+main>p {
+    text-align: center;
+    padding: 0 auto;
+    width: 49%;
+    line-height: 2;
+    font-size: 1.8rem
+}
+
+/* 
+MAIN SECTION:LAST CHILD
+*/
+main>section:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('../img/28.png') center/cover no-repeat;
+    margin-top: 50vh;
+}
+
+main>section:last-child article {
+    padding: 10vh auto;
+    text-align: center;
+}
+
+main>section:last-child div>section {
+    background: url('../img/28.png') center/cover no-repeat;
+}
+
+main>section:last-child div article {
+    display: flex;
+    flex-direction: row;
+}
